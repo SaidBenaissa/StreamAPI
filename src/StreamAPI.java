@@ -9,7 +9,7 @@ public class StreamAPI {
 
            IntStream.of(arr)
                     .min()
-                    .ifPresent(System.out::print); // or .ifPresent(min -> System.out.println(min));
+                    .ifPresent(System.out::println); // or .ifPresent(min -> System.out.println(min));
 
 
 //        int min = arr[0];
@@ -20,6 +20,16 @@ public class StreamAPI {
 //            }
 //        }
 //        System.out.println(min);
+
+
+        // Max
+        IntStream.of(arr)
+                .max()
+                .ifPresent(System.out::println);
+
+        IntStream.of(arr)
+                .average()
+                .ifPresent(System.out::println);
 
     }
 }
